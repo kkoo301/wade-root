@@ -65,5 +65,7 @@
     <module>wade-cache</module>
     <module>wade-watermark</module>
     <module>wade-trace</module>
+    <module>wade-rpc</module>
+    <module>wade-relax</module>
   </modules>
 </project>

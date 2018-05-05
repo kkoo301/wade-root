@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/wade-cache/wade-cache.iml" filepath="$PROJECT_DIR$/wade-cache/wade-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wade-relax/wade-relax.iml" filepath="$PROJECT_DIR$/wade-relax/wade-relax.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-root.iml" filepath="$PROJECT_DIR$/wade-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wade-rpc/wade-rpc.iml" filepath="$PROJECT_DIR$/wade-rpc/wade-rpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-trace/wade-trace.iml" filepath="$PROJECT_DIR$/wade-trace/wade-trace.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-watermark/wade-watermark.iml" filepath="$PROJECT_DIR$/wade-watermark/wade-watermark.iml" />
     </modules>

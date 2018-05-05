@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.sf.json:json-lib:jdk13:2.2.3-jdk13">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/json/json-lib/2.2.3-jdk13/json-lib-2.2.3-jdk13-jdk13.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/json/json-lib/2.2.3-jdk13/json-lib-2.2.3-jdk13-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/json/json-lib/2.2.3-jdk13/json-lib-2.2.3-jdk13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
