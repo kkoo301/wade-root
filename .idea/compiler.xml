@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="wade-cache" />
+        <module name="wade-watermark" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="wade-cache" target="1.7" />
       <module name="wade-root" target="1.7" />
+      <module name="wade-watermark" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

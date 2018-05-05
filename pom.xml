@@ -63,5 +63,6 @@
   </build>
   <modules>
     <module>wade-cache</module>
+    <module>wade-watermark</module>
   </modules>
 </project>
