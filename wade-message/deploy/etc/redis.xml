@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+
+<redis>
+    <default-datacenter>default-datacenter</default-datacenter>
+    <datacenter name="default-datacenter">    
+	    <cluster name="mq" desc="消息中间件" >
+	        <!-- 心跳时间,单位:秒,默认:5 -->
+	        <heartbeat-second>5</heartbeat-second>
+	        
+	        <!-- 连接池活跃连接数,默认:5,消息中间件配置不得小于5个! -->
+	        <pool-size>5</pool-size>
+	        
+	        <!--
+	        <address master="10.143.22.102:5672" />
+	        -->
+	        
+	        <address master="127.0.0.1:6379" />
+	    </cluster>
+    </datacenter>
+</redis>	    
