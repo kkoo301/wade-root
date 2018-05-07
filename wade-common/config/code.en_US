@@ -1,0 +1,56 @@
+java.sql.SQLException=Database Exception
+org.apache.tapestry.parse.TemplateParseException=An error occurred while parsing the page template
+java.lang.NoSuchMethodException=No such method {0}
+servlet.redirect.error.msg=Is Valid URL
+
+service.invoke.name.not.exist=Service Not Exist
+service.hessian.url.isempty=Remote Service Address Is Empty
+
+service.route.notfind=Service Route Not Found[{0}]
+service.route.url.unreachable=Service {0} Route Addr {1} Unreachable
+service.remote.url.unreachable=Service {0} Remote Addr {1} Unreachable
+
+ftputil-10000=The FTP server connection error!
+ftputil-10001=The FTP server connection error!
+ftputil-10002=The FTP server login error!
+ftputil-10003=The FTP server login error!
+ftputil-10004=The FTP initial directory error!
+ftputil-10005=The FTP initial directory error!
+
+com.ailk.common.config.XMLConfig.notexist=File {0} does not exist.
+com.ailk.common.config.XMLConfig.notparse=Cannot parse file {0}. 
+com.ailk.common.config.XMLConfig.notclose=File {0} is locked and cannot be closed.
+com.ailk.common.data.impl.TreeItem.notnull=TreeItem: id cannot be null.
+com.ailk.common.prepare.PrepareServlet.info=No data pre-loaded, Please access "/prepare" manually.
+com.ailk.common.util.parser.ImpExpUtil.export.gotdata=Data acquisition is completed.
+com.ailk.common.util.parser.ImpExpUtil.export.generated=Export file is generated.
+com.ailk.common.util.parser.ImpExpUtil.export.completed=File export is completed.
+com.ailk.common.util.parser.ImpExpUtil.config=Missing relavent config info for file export.
+com.ailk.common.util.parser.ImpExpUtil.import.fileinfo=Cannot find imported file info.
+com.ailk.common.util.parser.ImpExpUtil.import.gotfile=Imported file is obtained.
+com.ailk.common.util.parser.ImpExpUtil.import.parse=File data parsing is completed.
+com.ailk.common.util.parser.ImpExpUtil.import.nofile=Not obtain imported file : 
+com.ailk.common.util.parser.ImpExpUtil.import.parseexcp=File parsing exception : 
+com.ailk.common.util.parser.Validate.checkLength= length must be 
+com.ailk.common.util.parser.Validate.checkMinLength= min length cannot be less than 
+com.ailk.common.util.parser.Validate.checkMaxLength= max length cannot exceed 
+com.ailk.common.util.parser.Validate.checkText= cannot be null!
+com.ailk.common.util.parser.Validate.mustint= must be integer.
+com.ailk.common.util.parser.Validate.mustnum= must be numeric format 
+com.ailk.common.util.parser.Validate.musttime= must be the Date format 
+com.ailk.common.util.parser.Validate.checkPspt.error1=Verification passed!
+com.ailk.common.util.parser.Validate.checkPspt.error2=Invaild identification digit.
+com.ailk.common.util.parser.Validate.checkPspt.error3=Invalid identification number.
+com.ailk.common.util.parser.Validate.checkPspt.error4=Identification number verification error.
+com.ailk.common.util.parser.Validate.checkPspt.error5=Invalid region on identification card.
+com.ailk.common.util.parser.Validate.checkPspt.error6=Invalid Birthday on identification card.
+com.ailk.common.util.parser.Validate.checkPspt.error7=Identification number is null.
+com.ailk.common.util.Utility.syserror=System error. Please contact system admin!
+com.ailk.common.util.Utility.syntax=HTML syntax error : 
+
+###################################################################
+#### dbframe
+###################################################################
+db.session.conn.sql=Database get connection [{0}] error [{1}]
+db.session.conn.jndi=JNDI context get db connection[{0}] error [{1}]
+db.session.conn.class=get db connnection [{0}] can't find class [{1}]

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="common" default="all" basedir=".">
+	<property environment="env"/>
+	<property file="build.properties"/>
+	<property file="../../../version.properties"/>
+	<path id="class.path">
+		<pathelement path="${env.CLASSPATH}"/>
+		<pathelement path="${classes}"/>
+		<fileset dir="${lib}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="all" depends="jar,copytosubsys"/>
+
+	<target name="jar" depends="clean,compile,copymetafile">
+		<tstamp>
+			<format property="RELEASE_NO" pattern="yyyyMMdd" locale="en"/>
+		</tstamp>
+		
+		<echo message="begin to build common ${RELEASE_NO}"/>
+		<jar destfile="wade-${PROJECT_NAME}.jar" update="true">
+			<zipfileset dir="${classes}" prefix="">
+				<exclude name="**/CVS/**/*.*"/>
+				<include name="**/*.*"/>
+				<exclude name="com/ailk/common/data/IData.class" />
+				<exclude name="com/ailk/common/data/IDataset.class" />
+				<exclude name="com/ailk/common/data/IDataInput.class" />
+				<exclude name="com/ailk/common/data/IDataOutput.class" />
+				<exclude name="com/ailk/common/data/impl/DataMap.class" />
+				<exclude name="com/ailk/common/data/impl/DatasetList.class" />
+				<exclude name="com/ailk/common/data/impl/DataAdapter.class" />
+				<exclude name="com/ailk/common/data/impl/DataInput.class" />
+				<exclude name="com/ailk/common/data/impl/DataOutput.class" />
+				<exclude name="com/ailk/common/data/impl/Pagination.class" />
+				<exclude name="com/ailk/common/json/**/*.class" />
+			</zipfileset>
+			<zipfileset dir="${config}" prefix="">
+				<include name="**/*.*"/>
+				<exclude name="**/CVS/**/*.*"/>
+				<exclude name="**/*#*.*"/>
+			</zipfileset>
+			<manifest>
+				<attribute name="Wade-Version" value="${wade.version} (build ${RELEASE_NO})"/>
+			</manifest>
+		</jar>
+		
+		<jar destfile="wade-data.jar" update="true">
+			<zipfileset dir="${classes}" prefix="">
+				<exclude name="**/CVS/**/*.*"/>
+				<include name="com/ailk/common/data/IData.class" />
+				<include name="com/ailk/common/data/IDataset.class" />
+				<include name="com/ailk/common/data/IDataInput.class" />
+				<include name="com/ailk/common/data/IDataOutput.class" />
+				<include name="com/ailk/common/data/impl/DataMap.class" />
+				<include name="com/ailk/common/data/impl/DatasetList.class" />
+				<include name="com/ailk/common/data/impl/DataAdapter.class" />
+				<include name="com/ailk/common/data/impl/DataInput.class" />
+				<include name="com/ailk/common/data/impl/DataOutput.class" />
+				<include name="com/ailk/common/data/impl/Pagination.class" />
+				<include name="com/ailk/common/json/**/*.class" />
+			</zipfileset>
+			<manifest>
+				<attribute name="Wade-Version" value="${wade.version} (build ${RELEASE_NO})"/>
+			</manifest>
+		</jar>
+			
+		<delete includeemptydirs="true">
+			<fileset dir="${classes}"/>
+		</delete>
+	</target>
+	
+	<target name="clean" description="removes intermediate files">
+		<mkdir dir="${classes}"/>
+		<delete includeemptydirs="true">
+			<fileset dir="${classes}"/>
+			<fileset dir="${build}" includes="**/*.jar"/>
+		</delete>
+		<mkdir dir="${classes}"/>
+	</target>
+
+	<target name="compile" depends="">
+		<echo message="begin to compile source without dependency ">
+		</echo>
+		<javac encoding="UTF-8" debug="on" fork="yes" source="1.5" target="1.5" memoryInitialSize="350m" memoryMaximumSize="512m"
+			srcdir="${source}"
+			destdir="${classes}" 
+			includes="**/*.*">
+			<compilerarg value="-J-Duser.language=en"/>
+			<classpath refid="class.path"/>
+		</javac>
+	</target>
+
+	<target name="copymetafile">
+		<copy todir="${classes}">
+			<fileset dir="${source}">
+				<exclude name="**/CVS/**/*.*"/>
+				<exclude name="**/*#*.*"/>
+				<exclude name="**/*.java"/>
+			</fileset>
+			<fileset dir="${config}">
+				<exclude name="**/CVS/**/*.*"/>
+				<exclude name="**/*#*.*"/>
+				<include name="**/*.properties"/>
+				<include name="**/*.xml"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="copytosubsys">
+		<copy overwrite="true" todir="${commonlib}">
+			<fileset dir="${build}">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+	</target>
+	
+</project>

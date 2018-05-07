@@ -1,0 +1,60 @@
+java.sql.SQLException=数据库异常
+org.apache.tapestry.parse.TemplateParseException=页面模板解析错误
+java.lang.NoSuchMethodException=找不到方法 {0}
+
+service-10001=远程服务地址错误:{0}
+service-10002=无法获取远程服务{0}对象
+servlet.redirect.error.msg=非法的URL地址
+
+service.invoke.name.not.exist=找不到服务名
+service.hessian.url.isempty=远程服务地址为空
+
+service.route.notfind=找不到服务路由[{0}]
+service.route.url.unreachable=服务{0}地址{1}不可达
+service.remote.url.unreachable=服务{0}地址{1}不可达
+
+ftputil-10000=FTP服务器连接错误
+ftputil-10001=FTP服务器连接错误
+ftputil-10002=FTP服务器登录错误
+ftputil-10003=FTP登陆失败，账号不正确
+ftputil-10004=FTP初始目录错误
+ftputil-10005=FTP初始目录错误
+
+com.ailk.common.config.XMLConfig.notexist=文件[{0}]不存在
+com.ailk.common.config.XMLConfig.notparse=文件[{0}]无法解析
+com.ailk.common.config.XMLConfig.notclose=文件[{0}]被锁，无法正常关闭
+com.ailk.common.data.impl.TreeItem.notnull=TreeItem: id 不能为空！
+com.ailk.common.prepare.PrepareServlet.info=数据未预加载,需要手动访问/prepare
+com.ailk.common.util.parser.ImpExpUtil.export.gotdata=数据获取完成!
+com.ailk.common.util.parser.ImpExpUtil.export.generated=导出文件已生成!
+com.ailk.common.util.parser.ImpExpUtil.export.completed=文件已完成导出!
+com.ailk.common.util.parser.ImpExpUtil.config=文件导出缺少相应的配置信息!
+com.ailk.common.util.parser.ImpExpUtil.import.fileinfo=无法找到导入的文件信息
+com.ailk.common.util.parser.ImpExpUtil.import.gotfile=导入文件已获取!
+com.ailk.common.util.parser.ImpExpUtil.import.parse=文件数据解析完成!
+com.ailk.common.util.parser.ImpExpUtil.import.nofile=未获取导入文件:
+com.ailk.common.util.parser.ImpExpUtil.import.parseexcp=文件解析出现异常
+com.ailk.common.util.parser.Validate.checkLength=长度必须为
+com.ailk.common.util.parser.Validate.checkMinLength=最小长度不能低于
+com.ailk.common.util.parser.Validate.checkMaxLength=最大长度不能超过
+com.ailk.common.util.parser.Validate.checkText=不能为空;
+com.ailk.common.util.parser.Validate.mustint=必须为整数
+com.ailk.common.util.parser.Validate.mustnum=必须为数字格式
+com.ailk.common.util.parser.Validate.musttime=必须为时间格式
+com.ailk.common.util.parser.Validate.checkPspt.error1=验证通过
+com.ailk.common.util.parser.Validate.checkPspt.error2=身份证号码位数不对
+com.ailk.common.util.parser.Validate.checkPspt.error3=身份证号码不合法
+com.ailk.common.util.parser.Validate.checkPspt.error4=身份证号码校验错误
+com.ailk.common.util.parser.Validate.checkPspt.error5=身份证地区非法
+com.ailk.common.util.parser.Validate.checkPspt.error6=身份证出生日期不符合要求
+com.ailk.common.util.parser.Validate.checkPspt.error7=身份证为空
+com.ailk.common.util.Utility.syserror=系统错误,请联系系统管理员！
+com.ailk.common.util.Utility.syntax=HTML语法错误:
+
+###################################################################
+#### dbframe
+###################################################################
+db.session.conn.sql=数据库获取连接[{0}]错误 [{1}]
+db.session.conn.jndi=JNDI上下文获取数据库连接[{0}]错误 [{1}]
+db.session.conn.class=获取数据库连接[{0}]时找不到类 [{1}]
+
