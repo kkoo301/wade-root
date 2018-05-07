@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+
+<localcaches>
+    
+    <readonly>
+        <cache className="com.wade.gateway.ftp.server.cache.FtpSiteCache" cronExpr="*/1 * * * ?" init="false" />
+    </readonly>
+
+</localcaches>

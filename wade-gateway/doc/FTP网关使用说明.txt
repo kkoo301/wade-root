@@ -1,0 +1,80 @@
+1. FTP网关是什么？
+    开发FTP网关的目的主要是简化 内部系统 与 外部FTP服务器 通信的防火墙配置规则。
+    应用侧的代码，通过HTTP协议，将文件操作指令，发送至FTP网关，由网关代理所有的FTP操作。
+    应用侧所有FTP文件操作，不再直接调用 commons-net.jar 提供的FTP API，改调 wade-gateway.jar com.wade.gateway.ftp.client.FTPClient 提供的接口。
+    
+2. FTP网关的相关配置
+
+ 2.1 配置表: UOP_CEN1.WD_GATEWAY_FTP
+ 
+    SQL> DESC WD_GATEWAY_FTP;
+    Name      Type          Nullable Default Comments                 
+    --------  ------------- -------- ------- ------------------------ 
+    SITE_ID   VARCHAR2(20)                   FTP站点ID                  
+    IP        VARCHAR2(200)                  IP或域名                 
+    PORT      NUMBER(5)                      端口                     
+    USERNAME  VARCHAR2(50)                   用户名                   
+    PASSWORD  VARCHAR2(200)                  密码                     
+    BASE_PATH VARCHAR2(500)                  基准目录                   
+    STATE     CHAR(1)                        状态('U'：开启)      
+
+    每个文件操作都是基于FTP站点名进行的。FTP站点配置包括: IP,PORT,模式,用户名,密码,基准目录等。
+    
+ 2.2 配置文件: global.properties
+    
+    指定FTP网关的调用地址
+    
+    # ftp gateway (天津)
+    ftp.gateway.addr=http://192.168.102.3:14001
+
+    # ftp gateway (陕西)
+    ftp.gateway.addr=http://192.168.102.4:14001
+    
+3. FTP网关的使用说明
+
+    import com.wade.gateway.ftp.client.FTPClient;
+    
+    
+    /**
+     * FTP站点间的 文件拷贝
+     * 将 srcSiteId 所对应站点的 srcFileName 文件，拷贝一份到 dstSiteId 所对应站点上，目标文件名为 dstFileName。
+     */
+    FTPClient.remoteCopyFile(String srcSiteId, String srcFileName, String dstSiteId, String dstFileName);
+    
+    /**
+     * 从 siteId 指定的站点上，把文件 fileName 下载到本地 localFilePath (绝对路径)
+     * 
+     * 注意: 本地文件 localFilePath 用完后一定要记得删除!
+     * 
+     */
+    FTPClient.downloadFile(String siteId, String fileName, String localFilePath);
+
+    /**
+     * 删除 siteId 指定站点里的 fileName 文件
+     */
+    FTPClient.deleteFile(String siteId, String fileName);
+    
+    /**
+     * 在 siteId 所指定的站点里，创建目录 dirName
+     */
+    FTPClient.makeDirectory(String siteId, String dirName);
+    
+    /**
+     * 在 siteId 所指定的站点里，删除目录 dirName
+     */
+    FTPClient.removeDirectory(String siteId, String dirName);
+    
+    /**
+     * 在 siteId 所指定的站点里，将 srcFileName 文件，剪切为 dstFileName。
+     */
+    FTPClient.move(String siteId, String srcFileName, String dstFileName);
+    
+    /**
+     * 列出 siteId 所指定站点的 dirName 目录下的文件清单
+     */
+    FTPClient.listFiles(String siteId, String dirName);
+    
+    /**
+     * 将本地文件 localFilePath(绝对路径) 上传到 siteId 所指定的站点，文件名为 fileName。
+     */
+    FTPClient.uploadFile(String siteId, String fileName, String localFilePath);

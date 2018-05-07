@@ -1,0 +1,33 @@
+开发目的：
+     原先垃圾短信等业务，展示存在于 FTP server 的图片文件时，开发起来比较繁琐。现在提供一套便捷API，只需告诉框架你要展示的图片在哪台FTP主机上，
+     以及图片名字。框架会返回一个可以直接访问的URL地址给你。将这个地址拼在html的img标签里，即可显示。
+
+准备步骤:
+ 1. 取最新的 global.properties（注：新增了static.ftp.sites=static-node01配置）
+ 2. 取最新的 library/wadelib/common/lib/wade-gateway.jar (注: 新增了FtpShowUtils实现)
+ 3. 打包编译本机应用。
+
+API说明:
+---------------------------------------------------------------------------
+import com.wade.gateway.ftp.client.FtpShowUtils;
+
+/** 传入siteId 和 fileName 返回URL地址 */
+String fileUrl = FtpShowUtils.fetchFileUrl(String siteId, String fileName);
+---------------------------------------------------------------------------
+
+配置说明:
+---------------------------------------------------------------------------
+ 配置表: UOP_CEN1.WD_GATEWAY_FTP
+ 
+    SQL> DESC WD_GATEWAY_FTP;
+    Name      Type          Nullable Default Comments                
+    --------  ------------- -------- ------- ------------------------
+    SITE_ID   VARCHAR2(20)                   FTP站点ID                  
+    IP        VARCHAR2(200)                  IP或域名                
+    PORT      NUMBER(5)                      端口                    
+    USERNAME  VARCHAR2(50)                   用户名                  
+    PASSWORD  VARCHAR2(200)                  密码                    
+    BASE_PATH VARCHAR2(500)                  基准目录                  
+    STATE     CHAR(1)                        状态('U'：开启)      
+
+    每个文件操作都是基于FTP站点名进行的。FTP站点配置包括: IP,PORT,模式,用户名,密码,基准目录等。

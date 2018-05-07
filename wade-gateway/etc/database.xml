@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	database config
+	jetty: jndi = "java:comp/env/jdbc/framework"
+-->
+<database limit="100000">
+	<cen1
+		type="dbcp"
+		driver="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@192.168.102.1:1521:j2eedev"
+		user="uop_cen_tj"
+		passwd="123"
+		initialSize="1"
+		maxActive="10"
+		maxIdle="5"
+		maxWait="1000"
+		/>
+</database>
