@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-beans>
+	
+	<bean id="Crm.TestService" class="com.aif.httprpc.test.server.rmi.TestServiceImpl" />
+
+</service-beans>
