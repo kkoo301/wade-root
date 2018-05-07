@@ -1,0 +1,42 @@
+<flow>
+
+	<start>
+		<desc>开始</desc>
+		<name>start</name>
+		<inparam>
+            <param>
+                <key>auth</key>
+                <value>@context:auth</value>
+            </param>
+            <param>
+                <key>pswd</key>
+                <value>@context:pswd</value>
+            </param>
+        </inparam>
+        <next>@flow.auth</next>
+	</start>
+	
+	<service>
+		<desc>接入认证</desc>
+		<name>flow.auth</name>
+		<impl>com.wade.svf.biz.auth.AuthNode</impl>
+        <outparam>
+            <param>
+                <key>ticket</key>
+            </param>
+        </outparam>
+        <next>@end</next>
+	</service>
+	
+	<end>
+		<desc>结束</desc>
+		<name>end</name>
+		<outparam>
+            <param>
+                <key>ticket</key>
+                <value>@flow.auth:outparam.ticket</value>
+            </param>
+        </outparam>
+	</end>
+	
+</flow>

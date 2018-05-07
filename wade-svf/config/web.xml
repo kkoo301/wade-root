@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+
+	<servlet>
+        <servlet-name>appprepare</servlet-name>
+        <servlet-class>com.wade.svf.biz.servlet.SvfPrepareServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>wsdl</servlet-name>
+        <servlet-class>com.wade.svf.biz.servlet.SvfDLServer</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>service</servlet-name>
+        <servlet-class>com.wade.svf.server.http.FlowHttpServer</servlet-class>
+        <init-param>
+        	<param-name>flow-filter</param-name>
+        	<param-value>com.wade.svf.biz.filter.AuthFlowFilter;com.wade.svf.biz.filter.TraceFlowFilter</param-value>
+        </init-param>
+		<load-on-startup>0</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+            <servlet-name>appprepare</servlet-name>
+            <url-pattern>/appprepare</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>wsdl</servlet-name>
+        <url-pattern>/wsdl</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>service</servlet-name>
+        <url-pattern>/service/*</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
