@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT serviceconfig (config*, service*)>
+<!ELEMENT config (package*, route*)>
+
+<!ELEMENT package (#PCDATA)>
+<!ATTLIST package name CDATA "">
+<!ATTLIST package dir CDATA "">
+
+<!ELEMENT route (#PCDATA)>
+<!ATTLIST route name ID #REQUIRED>
+<!ATTLIST route value CDATA "">
+
+<!ELEMENT service (entity*)>
+<!ATTLIST service group CDATA "">
+
+<!ELEMENT entity (#PCDATA)>
+
+<!ATTLIST entity name ID #REQUIRED>
+<!ATTLIST entity path CDATA "">
+<!ATTLIST entity svc CDATA "">
+<!ATTLIST entity route CDATA  "">
+<!ATTLIST entity intercept CDATA  "">
+<!ATTLIST entity desc CDATA  "">
+<!ATTLIST entity timeout CDATA  "">

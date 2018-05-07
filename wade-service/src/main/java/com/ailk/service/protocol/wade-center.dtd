@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT centerservice (center*)>
+<!ELEMENT center (group*)>
+<!ATTLIST center name ID #REQUIRED>
+<!ATTLIST center desc CDATA #REQUIRED>
+
+<!ELEMENT group (#PCDATA)>
+<!ATTLIST group name ID #REQUIRED>
+<!ATTLIST group version CDATA "wade">

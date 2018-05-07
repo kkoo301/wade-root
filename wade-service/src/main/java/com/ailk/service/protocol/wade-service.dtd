@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY % service-content "(path*, description, rstype*, head, input, output)">
+<!ENTITY % static-value-type "(boolean|int|long|double|String) 'String'">
+
+<!ELEMENT service %service-content;>
+
+<!ELEMENT path (#PCDATA)>
+<!ATTLIST path
+  xml:lang NMTOKEN "en"
+>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+  xml:lang NMTOKEN "en"
+>
+
+<!ELEMENT head (input, output)>
+
+<!ELEMENT input (param*)>
+
+<!ELEMENT output (param*)>
+
+<!ELEMENT param (name, desc, (type*, value*))>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xml:lang NMTOKEN "en"
+>
+
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc
+  xml:lang NMTOKEN "en"
+>
+
+<!ELEMENT type (#PCDATA)>
+<!ATTLIST type
+  xml:lang NMTOKEN "en"
+>
+
+<!ELEMENT value (#PCDATA)>
+<!ATTLIST value
+  xml:lang NMTOKEN "en"
+>

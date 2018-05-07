@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE serviceconfig PUBLIC "-//AILK WADE//WADE 4.0//CN"
+  "http://www.wade.com/service/dtd/serviceconfig.dtd" [
+]>
+
+<serviceconfig>
+	<service subsys="common">
+    	<entity name="testDML" path="test.service.so.TestDmlService@testDML" timeout="1"/>
+    </service>
+</serviceconfig>

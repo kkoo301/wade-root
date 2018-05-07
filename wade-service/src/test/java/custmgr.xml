@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<sheet desc="客户列表导出">
+		<header isshow="false" height="300">
+			<cell
+				name="TYPE_ID"
+				desc=""
+				type="1"
+				align="1"
+				width="5000"
+				nullable="no"
+			/>
+			<cell
+				name="DATA_ID"
+				desc=""
+				type="1"
+				align="1"
+				width="5000"
+			/>
+			<cell
+				name="DATA_NAME"
+				desc=""
+				type="1"
+				align="1"
+				width="5000"
+			/>
+			<cell
+				name="IMPORT_ERROR"
+				desc=""
+				type="1"
+				align="1"
+				width="10000" 
+			/>
+		</header>
+	</sheet>
+</workbook>
