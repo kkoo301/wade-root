@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dsf>
+	
+	<!-- 服务初始化动作，实现IDsfStartup接口，多个将按顺序执行 -->
+	<startup>
+		<class>com.wade.dsf.test.startup.MyStartup</class>
+		<class>com.wade.dsf.startup.RegistryStartup</class>
+	</startup>
+	
+	<!-- 注册服务，实现了IDsfRegistry的接口，多个将按顺序执行，但服务名必须唯一 -->
+	<registry>
+		<class>com.wade.dsf.test.registry.MyRegistry</class>
+	</registry>
+
+	<!-- 主服务调用的过滤器, 实现了IDsfFilter的接口，配置多个时按顺序执行 -->
+	<filter>
+		<class>com.wade.dsf.test.filter.MyFilter</class>
+	</filter>
+	
+	<!-- 
+	根据Http请求头里的Context-Type来指定数据适配器，实现了IDsfAdapter的接口，能正反转换请求和响应的数据格式 
+	-->
+	<adapter>
+		<json>
+			<type>text/java-string</type>
+			<class>com.wade.dsf.adapter.StringAdapter</class>
+		</json>
+		<java>
+			<type>binary/java-stream</type>
+			<class>com.wade.dsf.adapter.ObjectAdapter</class>
+		</java>
+	</adapter>
+	
+	<!-- 服务执行，实现IDsfExecutor接口 -->
+	<executor>
+		<class>com.wade.dsf.executor.DsfExecutor</class>
+	</executor>
+	
+</dsf>
