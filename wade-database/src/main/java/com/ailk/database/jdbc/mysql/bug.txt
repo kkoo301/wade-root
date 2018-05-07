@@ -1,0 +1,2 @@
+1、mysql-connector-java-5.1.29-bin.jar 多并发事务引起的MySql5、Java连接器BUG
+查询也存在大量的select @@session.tx_read_only语句，且非常耗性能，通过在JDBC里添加cacheServerConfiguration=ture和useLocalSessionState=true解决

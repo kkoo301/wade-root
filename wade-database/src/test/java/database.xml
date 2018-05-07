@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	database config
+	jetty: jndi = "java:comp/env/jdbc/framework"
+-->
+<database limit="100000" session="com.ailk.database.dao.impl.LocalDAOSession">
+
+	
+	<PARAM
+		type="dbcp"
+		driver="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@10.238.99.133:1521:cendev"
+		user="UOP_PARAM"
+		passwd="UOP_PARAM"
+		owner="UCR_PARAM"
+		initialSize="1"
+		maxActive="10"
+		maxIdle="5"
+		maxWait="1000"
+		/>
+		
+	<cen1
+		type="dbcp"
+		driver="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@10.238.99.133:1521:cendev"
+		user="UOP_PARAM"
+		passwd="UOP_PARAM"
+		owner="UCR_PARAM"
+		initialSize="1"
+		maxActive="10"
+		maxIdle="5"
+		maxWait="1000"
+		/>
+		
+	<FILE1
+		type="dbcp"
+		driver="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@10.238.99.133:1521:crmdev"
+		user="UCR_FILE"
+		passwd="UCR_FILE"
+		owner="UCR_FILE"
+		initialSize="1"
+		maxActive="10"
+		maxIdle="5"
+		maxWait="1000"
+		/>
+	
+</database>
