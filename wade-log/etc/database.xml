@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	database config
+	jetty: jndi = "java:comp/env/jdbc/framework"
+-->
+<database limit="100000">
+	<log
+		type="dbcp"
+		driver="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@192.168.245.128:1521:crmdb"
+		user="UCR_LOG"
+		passwd="123"
+		initialSize="2"
+		maxActive="10"
+		maxIdle="5"
+		maxWait="1000"
+		dialect="oracle"
+		/>
+		
+	<console
+		type="dbcp"
+		driver="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://10.143.4.124/console?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;cacheServerConfiguration=true&amp;useLocalSessionState=true"
+		user="console"
+		passwd="1q1w1e1r"
+		initialSize="1"
+		maxActive="10"
+		maxIdle="5"
+		maxWait="1000"
+		dialect="oracle"
+		/>
+</database>

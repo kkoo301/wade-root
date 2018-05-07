@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<redis>
+    <default-datacenter>default-datacenter</default-datacenter>
+    <datacenter name="default-datacenter">
+        <cluster name="log" desc="流式日志记录" >
+
+            <heartbeat-second>5</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="192.168.245.128:13001" />
+        </cluster>
+    </datacenter>
+</redis>
