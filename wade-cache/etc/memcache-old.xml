@@ -1,0 +1,63 @@
+﻿<?xml version = '1.0' encoding = 'UTF-8'?>
+
+<memcache>
+        
+    <default-datacenter>center1</default-datacenter>
+    <datacenter name="center1" >
+
+        <cluster name="bcc_cache">
+            <address>192.168.234.129:11001</address>
+            <address>192.168.234.129:11002</address>
+            <address>192.168.234.129:11003</address>
+            <address>192.168.234.129:11004</address>
+            
+            <address master="192.168.234.129:11001" slave="192.168.234.130:11001">
+            <address master="192.168.234.129:11002" slave="192.168.234.130:11002">
+            <address master="192.168.234.129:11003" slave="192.168.234.130:11003">
+            <address master="192.168.234.129:11004" slave="192.168.234.130:11004">
+        </cluster>
+        
+    </datacenter>
+    
+    <!-- 指明服务连接的中心。注: 只支持后模糊匹配 -->
+    <server name="app-node01-*"   connect="center1" />
+    <server name="app-node02-*"   connect="center1" />
+    <server name="app-node03-*"   connect="center1" />
+    <server name="app-node04-*"   connect="center1" />
+    <server name="app-node05-*"   connect="center1" />
+    <server name="app-node06-*"   connect="center1" />
+    <server name="app-node07-*"   connect="center1" />
+    <server name="app-node08-*"   connect="center1" />
+    <server name="app-node09-*"   connect="center1" />
+    <server name="app-node10-*"   connect="center1" />
+    <server name="app-node11-*"   connect="center1" />
+    <server name="app-node12-*"   connect="center1" />
+    <server name="app-node13-*"   connect="center1" />
+    <server name="app-node14-*"   connect="center1" />
+    <server name="app-node15-*"   connect="center1" />
+    <server name="app-node16-*"   connect="center1" />
+    <server name="app-node17-*"   connect="center1" />
+    <server name="app-node18-*"   connect="center1" />
+    <server name="app-node19-*"   connect="center1" />
+    <server name="app-node20-*"   connect="center1" />
+    <server name="app-node21-*"   connect="center1" />
+    <server name="app-node22-*"   connect="center1" />
+    <server name="app-node23-*"   connect="center1" />
+    <server name="app-node24-*"   connect="center1" />
+    <server name="app-node25-*"   connect="center1" />
+    <server name="app-node26-*"   connect="center1" />
+    <server name="app-node27-*"   connect="center1" />
+    <server name="app-node28-*"   connect="center1" />
+    <server name="app-node29-*"   connect="center1" />
+    <server name="app-node30-*"   connect="center1" />
+
+    <server name="web-node01-*"   connect="center1" />
+    <server name="web-node02-*"   connect="center1" />
+    <server name="web-node03-*"   connect="center1" />
+    <server name="web-node04-*"   connect="center1" />
+    <server name="web-node05-*"   connect="center1" />
+    <server name="web-node06-*"   connect="center1" />
+    <server name="web-node07-*"   connect="center1" />
+    <server name="web-node08-*"   connect="center1" />
+    
+</memcache>

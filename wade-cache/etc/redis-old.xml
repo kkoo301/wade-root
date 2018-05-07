@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+
+<redis>
+                
+    <cluster name="mq" desc="权限缓存">
+        <!-- 心跳时间,单位:秒,默认:5 -->
+        <heartbeat-second>5</heartbeat-second>
+        
+        <!-- 连接池活跃连接数,默认:5 -->
+        <pool-size>5</pool-size>
+       
+        <address>192.168.245.128:12001</address>
+        <!--
+        <address>192.168.234.129:12002</address>
+        <address>192.168.234.129:12003</address>
+        <address>192.168.234.129:12004</address>
+        <address>192.168.234.129:12005</address>
+        <address>192.168.234.129:12006</address>
+        <address>192.168.234.129:12007</address>
+        <address>192.168.234.129:12008</address>
+        -->
+    </cluster>
+   
+</redis>

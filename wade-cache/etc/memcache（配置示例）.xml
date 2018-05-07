@@ -1,0 +1,98 @@
+﻿<?xml version = '1.0' encoding = 'UTF-8'?>
+
+<memcache>
+        
+    <datacenter name="center1" >
+        <cluster name="shc_cache">
+            <heartbeat-second>2</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="IP1:11101" slave="IP3:11111" />
+            <address master="IP2:11101" slave="IP4:11111" />
+            <address master="IP3:11101" slave="IP1:11111" />
+            <address master="IP4:11101" slave="IP2:11111" />
+        </cluster>
+        
+        <!-- 默认一中心的APP只连一中心的CCD，备节点在二中心 -->
+        <cluster name="codecode_cache"> 
+            <heartbeat-second>2</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="IP1:11301" slave="IP3:11311" />
+            <address master="IP1:11302" slave="IP3:11312" />
+            <address master="IP2:11301" slave="IP4:11311" />
+            <address master="IP2:11302" slave="IP4:11312" />
+        </cluster>
+
+        <!-- 默认一中心的APP只连一中心的STATIC CACHE，备节点在二中心 -->
+        <cluster name="staticparam_cache">
+            <heartbeat-second>2</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="IP1:11401" slave="IP3:11411" />
+            <address master="IP1:11402" slave="IP3:11412" />
+            <address master="IP2:11401" slave="IP4:11411" />
+            <address master="IP2:11402" slave="IP4:11412" />
+        </cluster>        
+        
+        <cluster name="bcc_cache">
+            <heartbeat-second>2</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="IP1:11501" slave="IP3:11511" />
+            <address master="IP2:11501" slave="IP4:11511" />
+            <address master="IP3:11501" slave="IP1:11511" />
+            <address master="IP4:11501" slave="IP2:11511" />
+        </cluster>
+    </datacenter>
+
+    <datacenter name="center2" >
+        <cluster name="shc_cache">
+            <heartbeat-second>2</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="IP1:11101" slave="IP3:11111" />
+            <address master="IP2:11101" slave="IP4:11111" />
+            <address master="IP3:11101" slave="IP1:11111" />
+            <address master="IP4:11101" slave="IP2:11111" />
+        </cluster>
+        
+        <!-- 默认二中心的APP只连二中心的CCD，备节点在一中心 -->
+        <cluster name="codecode_cache">
+            <heartbeat-second>2</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="IP3:11301" slave="IP1:11311" />
+            <address master="IP3:11302" slave="IP1:11312" />
+            <address master="IP4:11301" slave="IP2:11311" />
+            <address master="IP4:11302" slave="IP2:11312" />
+        </cluster>
+
+        <!-- 默认二中心的APP只连二中心的STATIC CACHE，备节点在一中心 -->
+        <cluster name="staticparam_cache">
+            <heartbeat-second>2</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="IP3:11401" slave="IP1:11411" />
+            <address master="IP3:11402" slave="IP1:11412" />
+            <address master="IP4:11401" slave="IP2:11411" />
+            <address master="IP4:11402" slave="IP2:11412" />
+        </cluster>        
+        
+        <cluster name="bcc_cache">
+            <heartbeat-second>2</heartbeat-second>
+            <pool-size>5</pool-size>
+            
+            <address master="IP1:11501" slave="IP3:11511" />
+            <address master="IP2:11501" slave="IP4:11511" />
+            <address master="IP3:11501" slave="IP1:11511" />
+            <address master="IP4:11501" slave="IP2:11511" />
+        </cluster>
+    </datacenter>
+    
+    
+    <!-- 指明服务连接的中心。注: 只支持后模糊匹配 -->
+    <server name="app-node01-*"   connect="center1" />
+    <server name="app-node02-*"   connect="center2" />
+
+</memcache>
