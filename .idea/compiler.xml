@@ -6,18 +6,44 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="wade-ant" />
         <module name="wade-cache" />
+        <module name="wade-common" />
+        <module name="wade-container" />
+        <module name="wade-database" />
+        <module name="wade-dfs" />
+        <module name="wade-dsf" />
+        <module name="wade-gateway" />
+        <module name="wade-jlcu" />
+        <module name="wade-log" />
+        <module name="wade-message" />
+        <module name="wade-mq" />
+        <module name="wade-notify" />
         <module name="wade-relax" />
         <module name="wade-rpc" />
+        <module name="wade-service" />
         <module name="wade-trace" />
         <module name="wade-watermark" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="wade-ant" target="1.7" />
       <module name="wade-cache" target="1.7" />
+      <module name="wade-common" target="1.7" />
+      <module name="wade-container" target="1.7" />
+      <module name="wade-database" target="1.7" />
+      <module name="wade-dfs" target="1.7" />
+      <module name="wade-dsf" target="1.7" />
+      <module name="wade-gateway" target="1.7" />
+      <module name="wade-jlcu" target="1.7" />
+      <module name="wade-log" target="1.7" />
+      <module name="wade-message" target="1.7" />
+      <module name="wade-mq" target="1.7" />
+      <module name="wade-notify" target="1.7" />
       <module name="wade-relax" target="1.7" />
       <module name="wade-root" target="1.7" />
       <module name="wade-rpc" target="1.7" />
+      <module name="wade-service" target="1.7" />
       <module name="wade-trace" target="1.7" />
       <module name="wade-watermark" target="1.7" />
     </bytecodeTargetLevel>

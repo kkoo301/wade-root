@@ -40,10 +40,29 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-all:4.0.30.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.wade:wade-mq:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wade:wade-common:1.0.0" level="project" />
+    <orderEntry type="module" module-name="wade-mq" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.4" level="project" />
+    <orderEntry type="module" module-name="wade-common" />
+    <orderEntry type="library" name="Maven: commons-net:commons-net:2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi:3.10.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.10.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.10.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: com.wade:wade-data:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wade:wade-database:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wade:wade-service:1.0.0" level="project" />
+    <orderEntry type="module" module-name="wade-database" />
+    <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
+    <orderEntry type="library" name="Maven: oracle:ojdbc8:12.2.0.1.0" level="project" />
+    <orderEntry type="module" module-name="wade-service" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-all:1.9.11" level="project" />
+    <orderEntry type="module" module-name="wade-rpc" />
+    <orderEntry type="module" module-name="wade-dsf" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.22.0-GA" level="project" />
+    <orderEntry type="library" name="Maven: com.wade:wade-biz-common:1.0.0" level="project" />
   </component>
 </module>

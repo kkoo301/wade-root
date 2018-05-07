@@ -2,9 +2,23 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-ant" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-container" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-database" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-dfs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-dsf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-gateway/doc/FtpShow使用说明.txt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/wade-jlcu" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-notify" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-relax" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-rpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-trace" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-watermark" charset="UTF-8" />
   </component>

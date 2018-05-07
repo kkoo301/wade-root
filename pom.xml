@@ -67,5 +67,18 @@
     <module>wade-trace</module>
     <module>wade-rpc</module>
     <module>wade-relax</module>
+    <module>wade-mq</module>
+    <module>wade-jlcu</module>
+    <module>wade-gateway</module>
+    <module>wade-dfs</module>
+    <module>wade-container</module>
+    <module>wade-ant</module>
+    <module>wade-log</module>
+    <module>wade-database</module>
+    <module>wade-notify</module>
+    <module>wade-message</module>
+    <module>wade-dsf</module>
+    <module>wade-common</module>
+    <module>wade-service</module>
   </modules>
 </project>
