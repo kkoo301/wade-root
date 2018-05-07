@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	database config
+	jetty: jndi = "java:comp/env/jdbc/framework"
+-->
+<database limit="100000">
+	<cen1
+		type="dbcp"
+		driver="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@10.154.63.121:1521:crm"
+		user="uop_cen1"
+		passwd="123"
+		initialSize="1"
+		maxActive="10"
+		maxIdle="5"
+		maxWait="1000"
+		/>
+	<crm1
+		type="dbcp"
+		driver="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@10.154.50.62:1521:crmdb"
+		user="uop_crm1"
+		passwd="UOP_CRM1"
+		initialSize="1"
+		maxActive="10"
+		maxIdle="5"
+		maxWait="1000"
+		/>
+</database>
