@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  
+queue name 和  servername 的最大长度为 10，且不能含有下划线_
+-->
+<notify root_path="D:\TestNotify">
+
+	<logserver address="127.0.0.1:30000"/>
+
+	<default-datacenter>center1</default-datacenter>
+	<datacenter name="center1">
+		<queue name="testNq0001" threadsize="5">
+			<address name="testnqs001" master="192.168.102.4:28000" salve="192.168.102.3:29000" haport="20000"/>
+			<address name="testnqs002" master="127.0.0.1:28001" salve="127.0.0.1:9001" haport="10001"/>
+		</queue>
+		
+		<queue name="testNq0002">
+			<address name="testnqs021" master="127.0.0.1:8002" salve="127.0.0.1:9002" haport="10002"/>
+			<address name="testnqs022" master="127.0.0.1:8003" salve="127.0.0.1:9003" haport="10003"/>
+		</queue>
+	</datacenter>
+	
+	<!--  
+	<server name="web-node-ngboss01" connect="center1" />
+	<server name="web-node-ngboss10" connect="center2" />
+	-->
+</notify>

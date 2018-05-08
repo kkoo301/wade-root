@@ -7,9 +7,7 @@
     <version>1.0.0</version>
   </parent>
 
-  <groupId>com.wade</groupId>
   <artifactId>wade-ant</artifactId>
-  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>wade-ant</name>

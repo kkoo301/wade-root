@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/wade-dfs/wade-dfs.iml" filepath="$PROJECT_DIR$/wade-dfs/wade-dfs.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-dsf/wade-dsf.iml" filepath="$PROJECT_DIR$/wade-dsf/wade-dsf.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-gateway/wade-gateway.iml" filepath="$PROJECT_DIR$/wade-gateway/wade-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wade-httprpc/wade-httprpc.iml" filepath="$PROJECT_DIR$/wade-httprpc/wade-httprpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-jlcu/wade-jlcu.iml" filepath="$PROJECT_DIR$/wade-jlcu/wade-jlcu.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-log/wade-log.iml" filepath="$PROJECT_DIR$/wade-log/wade-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-message/wade-message.iml" filepath="$PROJECT_DIR$/wade-message/wade-message.iml" />
@@ -18,7 +19,11 @@
       <module fileurl="file://$PROJECT_DIR$/wade-relax/wade-relax.iml" filepath="$PROJECT_DIR$/wade-relax/wade-relax.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-root.iml" filepath="$PROJECT_DIR$/wade-root.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-rpc/wade-rpc.iml" filepath="$PROJECT_DIR$/wade-rpc/wade-rpc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wade-service/wade-service.iml" filepath="$PROJECT_DIR$/wade-service/wade-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wade-safe/wade-safe.iml" filepath="$PROJECT_DIR$/wade-safe/wade-safe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wade-search/wade-search.iml" filepath="$PROJECT_DIR$/wade-search/wade-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wade-sec/wade-sec.iml" filepath="$PROJECT_DIR$/wade-sec/wade-sec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wade-sna/wade-sna.iml" filepath="$PROJECT_DIR$/wade-sna/wade-sna.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wade-svf/wade-svf.iml" filepath="$PROJECT_DIR$/wade-svf/wade-svf.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-trace/wade-trace.iml" filepath="$PROJECT_DIR$/wade-trace/wade-trace.iml" />
       <module fileurl="file://$PROJECT_DIR$/wade-watermark/wade-watermark.iml" filepath="$PROJECT_DIR$/wade-watermark/wade-watermark.iml" />
     </modules>

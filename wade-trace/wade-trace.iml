@@ -58,11 +58,6 @@
     <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
     <orderEntry type="library" name="Maven: oracle:ojdbc8:12.2.0.1.0" level="project" />
-    <orderEntry type="module" module-name="wade-service" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-all:1.9.11" level="project" />
-    <orderEntry type="module" module-name="wade-rpc" />
-    <orderEntry type="module" module-name="wade-dsf" />
-    <orderEntry type="library" name="Maven: org.javassist:javassist:3.22.0-GA" level="project" />
-    <orderEntry type="library" name="Maven: com.wade:wade-biz-common:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wade:wade-service:1.0.0" level="project" />
   </component>
 </module>

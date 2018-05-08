@@ -14,6 +14,7 @@
         <module name="wade-dfs" />
         <module name="wade-dsf" />
         <module name="wade-gateway" />
+        <module name="wade-httprpc" />
         <module name="wade-jlcu" />
         <module name="wade-log" />
         <module name="wade-message" />
@@ -21,7 +22,11 @@
         <module name="wade-notify" />
         <module name="wade-relax" />
         <module name="wade-rpc" />
-        <module name="wade-service" />
+        <module name="wade-safe" />
+        <module name="wade-search" />
+        <module name="wade-sec" />
+        <module name="wade-sna" />
+        <module name="wade-svf" />
         <module name="wade-trace" />
         <module name="wade-watermark" />
       </profile>
@@ -35,6 +40,7 @@
       <module name="wade-dfs" target="1.7" />
       <module name="wade-dsf" target="1.7" />
       <module name="wade-gateway" target="1.7" />
+      <module name="wade-httprpc" target="1.7" />
       <module name="wade-jlcu" target="1.7" />
       <module name="wade-log" target="1.7" />
       <module name="wade-message" target="1.7" />
@@ -43,9 +49,17 @@
       <module name="wade-relax" target="1.7" />
       <module name="wade-root" target="1.7" />
       <module name="wade-rpc" target="1.7" />
+      <module name="wade-safe" target="1.7" />
+      <module name="wade-search" target="1.7" />
+      <module name="wade-sec" target="1.7" />
       <module name="wade-service" target="1.7" />
+      <module name="wade-sna" target="1.7" />
+      <module name="wade-svf" target="1.7" />
       <module name="wade-trace" target="1.7" />
       <module name="wade-watermark" target="1.7" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
   </component>
 </project>

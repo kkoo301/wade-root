@@ -11,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/wade-dsf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-gateway/doc/FtpShow使用说明.txt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/wade-httprpc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-jlcu" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-log" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-message" charset="UTF-8" />
@@ -18,7 +19,12 @@
     <file url="file://$PROJECT_DIR$/wade-notify" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-relax" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-rpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-safe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-sec" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-sna" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wade-svf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-trace" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wade-watermark" charset="UTF-8" />
   </component>
